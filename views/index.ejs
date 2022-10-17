@@ -12,7 +12,8 @@
         <h1> <%= title %> </h1>
         <p>Talk about your worries in annonymity.</p>
     </nav>
-    <a href="/new">Create post</a>
+    
+    <a href="/new"><button class="button">Create post</button></a>
 
     <% for (let x = 0; x < messages.length; x++) { %>
         <h2> <%= messages[x].user %></h2>
