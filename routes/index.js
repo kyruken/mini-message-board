@@ -15,7 +15,7 @@ const messages = [
 ]
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express', messages: messages});
+  res.render('index', { title: 'Express yourself', messages: messages});
 });
 
 router.get('/new', function(req, res) {

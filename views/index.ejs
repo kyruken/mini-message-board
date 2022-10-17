@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-    <h1> <%= title %> </h1>
-    <p>Welcome to <%= title %> </p>
+    <nav class="navbar">
+        <h1> <%= title %> </h1>
+        <p>Talk about your worries in annonymity.</p>
+    </nav>
     <a href="/new">Create post</a>
 
     <% for (let x = 0; x < messages.length; x++) { %>
