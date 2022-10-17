@@ -3,16 +3,19 @@ var router = express.Router();
 
 const messages = [
   {
-    title: "Greetings",
-    text: "Hi there!",
+    title: "My League Of Legends Addiction",
+    text: `Hey I'm embarassed to say this, but I'm actually bronze in League of Legends. 
+    I been playing for almost 10 years but I can't get out. I play for around 12 hours a day, and I barely sleep or eat.
+    I'm TERRIBLY addicted but still bad. Anyone else addicted to video games?`,
     user: "Amando",
-    added: new Date()
+    added: "45 minutes ago"
   },
   {
-    title: "Greetings",
-    text: "Hello World!",
+    title: "Cast ninjutsu on enemies",
+    text: `Konichiwa guys!!! Watashi have many tomodachis, pero I have some enemies. I am daijoubun but I can't help
+    but to want to teach them what TRUE pain is. I'd like to SHINRA TENSEI their butts off the planet! Anyone else feel this way?`,
     user: "Charles",
-    added: new Date()
+    added: "1 hour ago"
   },
 ]
 /* GET home page. */

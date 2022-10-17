@@ -16,10 +16,12 @@
     <a href="/new"><button class="button">Create post</button></a>
 
     <% for (let x = 0; x < messages.length; x++) { %>
-        <div>
-            <h2> <%= messages[x].title %></h2>
-            <p> <%= messages[x].text %></p>
-            <div>
+        <div class="message-container">
+            <div class="message-1-2">
+                <h2> <%= messages[x].title %></h2>
+                <p> <%= messages[x].text %></p>
+            </div>
+            <div class="message-2-2">
                 <p> <%= messages[x].user %></p>
                 <p> <%= messages[x].added %></p>
             </div>
