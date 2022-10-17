@@ -32,7 +32,7 @@ router.post('/new', function(req, res) {
   let author = req.body.author;
   let textMessage = req.body.message;
 
-  messages.unshift({title: title, text: textMessage, user: author, added: new Date()});
+  messages.unshift({title: title, text: textMessage, user: author, added: "Just now"});
 
   res.redirect('/');
 
