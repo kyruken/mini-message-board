@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-    <h2>Create post</h2>
-    <form method="POST" action="/new">
-        <label for="author">
-            Name: <input type="text" name="author">
-        </label>
-        <label for="title">
-            Title: <input type="text" name="title">
-        </label>
-        <label for="message">
-            Message: <input type="text" name="message">
-        </label>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="form-container">
+        <h2>Create post</h2>
+        <form method="POST" action="/new">
+            <label for="author">
+                <input type="text" name="author" placeholder="Name">
+            </label>
+            <label for="title">
+                <input type="text" name="title" placeholder="Title">
+            </label>
+            <label for="message">
+                <input type="text" name="message" placeholder="Message">
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
     
 </body>
 </html>
