@@ -74,7 +74,7 @@ a {
 
 .message-2-2 {
   display: flex;
-  gap: 60%;
+  justify-content: space-between;
 }
 
 .message-2-2 p:first-child {
