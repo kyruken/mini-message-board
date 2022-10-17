@@ -1,11 +1,15 @@
+
+/* Resets */
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
 }
 
-button {
+button, input {
   border: 0;
 }
+
+/* Global styles */
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color:#32addd;
@@ -17,6 +21,33 @@ h1 {
   font-size: 32px;
 }
 
+a {
+  color: #08719b;
+}
+
+button {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #256b87;
+  color: #32addd;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+  transition:  background-color 0.5s ease-out;
+  transition: border 0.5 ease-out;
+}
+
+button:hover {
+  background-color:#2ba1d0;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+input[type=text] {
+  border: 1px solid rgb(224, 218, 218);
+  border-radius: 5px;
+  width: 200px;
+  height: 25px;
+
+}
 .navbar {
   border-bottom: 2px solid #fff;
   color: white;
@@ -29,25 +60,9 @@ h1 {
 .button {
   width: 500px;
   height: 50px;
-  background-color: #fff;
-  border-radius: 10px;
-  border: 2px solid #256b87;
-  color: #32addd;
-  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
-  transition:  background-color 0.5s ease-out;
-  transition: border 0.5 ease-out;
 }
 
-.button:hover {
-  background-color:#2ba1d0;
-  color: #fff;
-  border: 2px solid #fff;
-}
-
-a {
-  color: #00B7FF;
-}
-
+/* index styles */
 .body-container {
   padding: 20px 0;
   display: flex;
@@ -79,4 +94,27 @@ a {
 
 .message-2-2 p:first-child {
   color:rgb(106, 104, 104);
+}
+
+/* Form styles */
+
+.form-container {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.form-container h2 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 700px;
+}
+
+form button {
+  width: 80px;
 }
