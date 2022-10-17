@@ -3,11 +3,13 @@ var router = express.Router();
 
 const messages = [
   {
+    title: "Greetings",
     text: "Hi there!",
     user: "Amando",
     added: new Date()
   },
   {
+    title: "Greetings",
     text: "Hello World!",
     user: "Charles",
     added: new Date()
@@ -26,7 +28,7 @@ router.post('/new', function(req, res) {
   let author = req.body.author;
   let textMessage = req.body.message;
 
-  messages.push({text: textMessage, user: author, added: new Date()});
+  messages.push({title: title, text: textMessage, user: author, added: new Date()});
 
   res.redirect('/');
 
