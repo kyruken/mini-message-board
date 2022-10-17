@@ -12,22 +12,22 @@
         <h1> <%= title %> </h1>
         <p>Talk about your worries in annonymity.</p>
     </nav>
-    
-    <a href="/new"><button class="button">Create post</button></a>
-
-    <% for (let x = 0; x < messages.length; x++) { %>
-        <div class="message-container">
-            <div class="message-1-2">
-                <h2> <%= messages[x].title %></h2>
-                <p> <%= messages[x].text %></p>
+    <section class="body-container">
+        
+        <a href="/new"><button class="button">Create post</button></a>
+        <% for (let x = 0; x < messages.length; x++) { %>
+            <div class="message-container">
+                <div class="message-1-2">
+                    <h2> <%= messages[x].title %></h2>
+                    <p> <%= messages[x].text %></p>
+                </div>
+                <div class="message-2-2">
+                    <p> <%= messages[x].user %></p>
+                    <p> <%= messages[x].added %></p>
+                </div>
             </div>
-            <div class="message-2-2">
-                <p> <%= messages[x].user %></p>
-                <p> <%= messages[x].added %></p>
-            </div>
-        </div>
-
-    <% } %>
+        <% } %>
+    </section>
     
 </body>
 </html>
