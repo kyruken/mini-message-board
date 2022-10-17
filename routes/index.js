@@ -28,10 +28,11 @@ router.get('/new', function(req, res) {
 })
 
 router.post('/new', function(req, res) {
+  let title = req.body.title;
   let author = req.body.author;
   let textMessage = req.body.message;
 
-  messages.push({title: title, text: textMessage, user: author, added: new Date()});
+  messages.unshift({title: title, text: textMessage, user: author, added: new Date()});
 
   res.redirect('/');
 
